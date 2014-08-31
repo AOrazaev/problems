@@ -142,7 +142,7 @@ std::string tricolorization_(
 }
 
 
-std::string tricolorization(const std::vector<int> data) {
+std::string tricolorization(const std::vector<int>& data) {
     std::string result = tricolorization_(data, {}, data);
     if (result == "") {
         return "imposible";
